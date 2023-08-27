@@ -6,6 +6,7 @@ const container = document.querySelector(".container");
 const tasks = localStorage.getItem("tasks") ? JSON.parse(localStorage.getItem("tasks")) : [];   
 showAllTasks();
 
+// function to show all tasks
 function showAllTasks(){
     tasks.forEach((value, index)=>{
         const div = document.createElement("div");
